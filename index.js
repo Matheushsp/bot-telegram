@@ -14,7 +14,7 @@ const bot = new TelegramBot(token, {
     polling: true
 });
 
-console.log('🤖 Bot iniciado com sucesso!');
+console.log('🤖 Bot iniciado com sucesso!!!');
 
 
 /*
