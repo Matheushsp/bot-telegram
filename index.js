@@ -14,7 +14,7 @@ const bot = new TelegramBot(token, {
     polling: true
 });
 
-console.log('🤖 Bot iniciado com sucesso!!!');
+console.log('🤖 Bot iniciado com sucesso!');
 
 
 /*
@@ -200,6 +200,7 @@ bot.onText(/\/ajuda/, (msg) => {
         }
     );
 });
+
 
 /*
 ====================================================
@@ -394,4 +395,19 @@ Tente novamente mais tarde.
             `
         );
     }
+});
+
+
+/*
+====================================================
+📌 ERROS
+====================================================
+*/
+
+bot.on('polling_error', (erro) => {
+
+    console.error(
+        '❌ Erro no polling:',
+        erro.message
+    );
 });
